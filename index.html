@@ -12,8 +12,6 @@
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/style.css?v=1.0.0.1">
 		<link rel="stylesheet" href="css/bg.css">
-		<link rel="stylesheet" href="css/toBeDetermined.css">
-		<script src="js/jquery-3.6.0.js"></script>
 		<script src="js/bootstrap.js"></script>
 	</head>
 	<body>
@@ -91,6 +89,9 @@
 				</li> -->
 				<li class="nav-item my-nav-item">
 					<a id='speakersButton' class="nav-link font-color" href="#" onclick="activeFunction(this.id)">Keynotes</a>
+				</li>
+				<li class="nav-item my-nav-item">
+					<a id='aboutButton' class="nav-link font-color" href="#" onclick="activeFunction(this.id)">About Wuhan</a>
 				</li>
 			</ul>
 		</div>
@@ -202,6 +203,19 @@
 				</div>
 			</div>
 		</div>
+		<div id="aboutPage" style="display: none;">
+			<div class="text-center text-title ">
+				<img src="images/emoji-laughing.svg" />
+				<span class="font-color">About Wuhan</span>
+			</div>
+			<div class="text-bg">
+				<div class="text-center text-contact text-contact1">
+					<iframe src="about.html" id="aboutPageIframe"
+						class="venue-iframe">
+					</iframe>
+				</div>
+			</div>
+		</div>
 		<div id="endNav" class="endNav font-color">
 			<div class='icon'>
 				<ul class="icon-ul">
@@ -230,7 +244,8 @@
 				"acceptedButton":"acceptedPage",
 				"programButton":"programPage",
 				// "VenueButton": "VenuePage",
-				"speakersButton": "speakersPage"
+				"speakersButton": "speakersPage",
+				"aboutButton": "aboutPage"
 			};
 			var iframeMap = {
 				"homePage":"homeIframe",
@@ -240,7 +255,8 @@
 				"registrationPage":"registrationIframe",
 				// "VenuePage":"VenuePageIframe",
 				"programPage":"programmePaperIfram",
-				"speakersPage":"speakersPageIframe"
+				"speakersPage":"speakersPageIframe",
+				"aboutPage":"aboutPageIframe"
 			}
 
 			function activeFunction(id) {
