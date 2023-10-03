@@ -8,13 +8,17 @@
 				align-items: flex-start;
 				vertical-align: super;
 				width: 100%;
+
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        border-collapse:collapse;
 			}
 			td{
-				vertical-align: super;
-				
-			}
-			td{
+        vertical-align: super;
 				padding-bottom: 10px;
+        border-left: 1px solid black;
+        border-top: 1px solid black;
+		vertical-align: middle;
 			}
 			.firstTd{
 				width: 15%;
@@ -33,11 +37,528 @@
 	<body>
 		
 		<div>
+	   <table style="vertical-align:middle; text-align: center; width: 100%; height: 100%;">
+        <tr >
+          <td colspan="3" style="height: 40px;text-align: center; color:blue; font-weight: bolder; font-size: larger;">
+            Conference Program
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3" style="height: 45px;text-align: left; text-indent: 20px;  font-size:normal">
+            <b>Notes: </b>All times and dates are shown in UTC+8.
+          </td>
+        </tr>
+		<tr>
+           <td colspan="3" style="font-weight: bolder;height: 45px;background-color:goldenrod;">
+            Day 1 (20/10/2023)
+           </td>
+         </tr>
+         <tr>
+           <td style="width: 30%;">
+             10:00-20:00
+           </td>
+           <td colspan="2">
+             <br/><b>On-site Registration</b>
+			<br/>Location: Lobby of Hongshan Hotel
+           </td>
+         </tr>
+		 <tr>
+           <td >
+             
+           </td>
+           <td colspan="2" style= "background:#F7CAAC;">
+            <label style="font-weight:bold;">Workshop on Post-quantum Cryptography (5 talks)</label>
+            <br/>Session Chair: TBA
+          </td>
+         </tr>
+		 <tr>
+          <td>14:00-14:30</td>
+          <td>Solving Lattice SVP Challenges by a Trade-off Strategy</td>
+                <td><br/>Leizhang Wang
+				<br/><i>Osaka University</i></td>
+        </tr>
+		<tr>
+          <td>14:30-15:00</td>
+          <td>Privacy Preserving Data Processing for Cloud Computing with Fine-Grained Access Control</td>
+                <td><br/>Ting Liang
+				<br/><i>Wuhan University of Technology</i></td>
+        </tr>
+		<tr>
+          <td>15:00-15:30</td>
+          <td>Recent Progress on Lattice-based Group Signature</td>
+          <td><br/>Simin Chen
+				<br/><i>Central China Normal University</i></td>
+        </tr>
+        <tr>
+          <td>
+            15:30-16:00
+          </td>
+          <td colspan="2">
+            Coffee Break
+          </td>
+        </tr> 
+        <tr>
+          <td>16:00-16:30</td>
+          <td>Secure Multi-party Signing Techniques and Key Protection</td>
+                <td><br/>Qi Feng
+				<br/><i>Wuhan University</i></td>
+        </tr>
+		<tr>
+          <td>16:30-17:00</td>
+          <td>TBA</td>
+               <td><br/>TBA
+				<br/><i>TBA</i></td>
+        </tr>
+         <tr>
+           <td colspan="3" style="font-weight: bolder;height: 45px;background-color:goldenrod;">
+            Day 2 (21/10/2023)
+           </td>
+         </tr>
+         <tr>
+           <td style="width: 30%;">
+             08:30-09:00
+           </td>
+           <td colspan="2">
+             Inauguration
+           </td>
+         </tr>
+        <tr>
+          <td>
+            09:00-09:50
+          </td>
+          <td colspan="2" style="background-color: #FFE599;">
+		  <label style="font-weight:bold; color:red">Keynote Talk</label>
+		  <br/>Title: <b>Recent Developments in Post-Quantum Cryptography</b>
+            <br/>Speaker: <b>Tsuyoshi Takagi</b>
+            <br/>Session Chair: TBA
+          </td>
+        </tr> 
+        <tr>
+          <td>
+            09:50-10:05
+          </td>
+          <td colspan="2">
+            Coffee Break
+          </td>
+        </tr> 
+        <tr>
+          <td>
+            10:05-11:05
+          </td>
+          <td colspan="2" style= "background:#F7CAAC;">
+            <label style="font-weight:bold;">Session 1: Encryption I (3 talks)</label>
+            <br/>Session Chair: TBA
+          </td>
+          <tr>
+          <td>10:05-10:25</td>
+          <td>Key-Range Attribute-Based Signatures for Range of Inner Product and Its Applications</td>
+                <td>Masahito Ishizaka</td>
+        </tr>
+		<tr>
+          <td>10:25-10:45</td>
+          <td>Threshold Ring Signature Scheme from Cryptographic Group Action</td>
+                <td>Minh Thuy Truc Pham, Dung Hoang Duong, Yannan Li, Willy Susilo</td>
+        </tr>
+		<tr>
+          <td>10:45-11:05</td>
+          <td>Multi-Input Functional Encryption for Unbounded Inner Products</td>
+                <td>Bishnu Charan Behera, Somindu C. Ramanna</td>
+        </tr>
+        <tr>
+          <td>
+            11:05-11:20
+          </td>
+          <td colspan="2">
+            Coffee Break
+          </td>
+        </tr> 
+        <tr>
+          <td>
+            11:20-12:10
+          </td>
+		  <td colspan="2" style="background-color: #FFE599;">
+          <label style="font-weight:bold; color:red">Keynote Talk</label>
+		  <br/>Title: <b>Pragmatic Cryptography for Cloud Computing Security</b>
+            <br/>Speaker: <b>Willy Susilo</b>
+            <br/>Session Chair: TBA
+			</td>
+        </tr>
+		<tr>
+          <td>
+            12:10-13:30
+          </td>
+          <td colspan="2">
+            Lunch Break
+          </td>
+        </tr> 
+		<tr>
+          <td>
+            13:30-14:20
+          </td>
+		  <td colspan="2" style="background-color: #FFE599;">
+          <label style="font-weight:bold; color:red">Keynote Talk</label>
+		  <br/>Title: <b>Toward Data Security on AI Systems</b>
+            <br/>Speaker: <b>Qian Wang</b>
+            <br/>Session Chair: TBA
+			</td>
+        </tr>
 		<!--
-			<img src="images1/1111.jpg" width="900px" height="1200px">
-			<img src="images1/2222.jpg" width="900px" height="1200px">
-		</div>
+		<tr>
+          <td>
+            14:20-14:35
+          </td>
+          <td colspan="2">
+            Coffee Break
+          </td>
+        </tr> 
 		-->
-		
+		<tr>
+          <td>
+            14:20-15:20
+          </td>
+          <td colspan="2" style= "background:#F7CAAC;">
+            <label style="font-weight:bold;">Session 2: Signature I (3 talks)</label>
+            <br/>Session Chair: TBA
+          </td>
+        </tr>
+		<tr>
+          <td>14:20-14:40</td>
+          <td>Post-quantum Sigma Protocols and Signatures from Low-Rank Matrix Completions</td>
+                <td>Jiaming Wen, Houzhen Wang, Huanguo Zhang</td>
+        </tr>
+		<tr>
+          <td>14:40-15:00</td>
+          <td>Constant-size Group Signatures with Message-Dependent Opening from Lattices</td>
+                <td>Simin Chen, Jiageng Chen, Atsuko Miyaji, Kaiming Chen</td>
+        </tr>
+		<tr>
+          <td>15:00-15:20</td>
+          <td>Identity-based Matchmaking Encryption Secure against Key Generation Center</td>
+                <td>Sohto Chiku, Keisuke Hara, Junji Shikata</td>
+        </tr>
+	
+        <tr>
+          <td>
+            15:20-15:35
+          </td>
+          <td colspan="2">
+            Coffee Break
+          </td>
+        </tr> 
+		<tr >
+          <td>
+            15:35-16:25
+          </td>
+          <td colspan="2" style="background-color: #FFE599;">
+          <label style="font-weight:bold; color:red">Keynote Talk</label>
+		  <br/>Title: <b>Searchable Symmetric Encryption and its attacks</b>
+            <br/>Speaker: <b>Kaitai Liang</b>
+            <br/>Session Chair: TBA
+			</td>
+        </tr> 
+		<!--
+		<tr>
+          <td>
+            16:25-17:05
+          </td>
+          <td colspan="2">
+            Coffee Break
+          </td>
+        </tr> 
+		-->
+		<tr >
+          <td>
+            16:25-17:05
+          </td>
+          <td colspan="2" style= "background:#F7CAAC;">
+            <label style="font-weight:bold;">Session 3: Fundamentals & Cryptographic Primitives (2 talks)</label>
+            <br/>Session Chair: TBA
+          </td>
+        </tr> 
+		<tr>
+          <td>16:25-16:45</td>
+          <td>Efficient Zero-Knowledge Arguments for Matrix Relations over Rings and Non-malleable Enhancement</td>
+                <td>Yuan Tian, Xinke Tian, Yongda Pang</td>
+        </tr>
+		<tr>
+          <td>16:45-17:05</td>
+          <td>Reversible Data Hiding in Encrypted Images Based on Block Classification Coding of Sparse Representation</td>
+                <td>Fuhu Wu, Lin Wang, Shun Zhang, Jie Cui, Hong Zhong</td>
+        </tr>
+		<tr >
+          <td>
+            18:00-20:30
+          </td>
+          <td colspan="2">
+		  <b>Conference Banquet</b>
+          </td>
+        </tr>
+		<tr>
+           <td colspan="3" style="font-weight: bolder;height: 45px;background-color:goldenrod;">
+            Day 3 (22/10/2023)
+           </td>
+         </tr>
+         <tr >
+           <td style="width: 30%;">
+             08:30-09:30
+           </td>
+           <td colspan="2" style= "background:#F7CAAC;">
+            <label style="font-weight:bold;">Session 4: Privacy Preservation (3 talks)</label>
+            <br/>Session Chair: TBA
+          </td>
+         </tr>
+		 <tr>
+          <td>08:30-08:50</td>
+          <td>Privacy Preserving Outsourced K-means Clustering using Kd-tree</td>
+                <td>Yanxiang Deng, Lin Liu, Shaojing Fu, Yuchuan Luo, Wei Wu, Shixiong Wang</td>
+        </tr>
+		<tr>
+          <td>08:50-09:10</td>
+          <td>Fuzzy Deduplication Scheme Supporting Pre-verification of Label Consistency</td>
+                <td>Zehui Tang, Shengke Zeng, Tao Li, Shuai Cheng, Haoyu Zheng</td>
+        </tr>
+		<tr>
+          <td>09:10-09:30</td>
+          <td>A Privacy-Preserving Takeaway Delivery Service Scheme</td>
+                <td>Lang Xu, Jiqiang Li, Hao Zhang, Hua Shen</td>
+        </tr>
+		 <tr >
+          <td>
+            09:30-09:45
+          </td>
+          <td colspan="2">
+		  Coffee Break
+          </td>
+        </tr> 
+         <tr >
+          <td>
+            09:45-10:45
+          </td>
+          <td colspan="2" style= "background:#F7CAAC;">
+            <label style="font-weight:bold;">Session 5: Signature II (3 talks)</label>
+            <br/>Session Chair: TBA
+          </td>
+        </tr> 
+		<tr>
+          <td>09:45-10:05</td>
+          <td>SMHSDVS: A Secure and Mutual Heterogeneous Strong Designated Signature between PKI and IBC</td>
+                <td>Yibing Wang, Xiaoxiao Wang, Chin-tser Huang, Dejun Wang, Binhao Ma, Bo Meng</td>
+        </tr>
+		<tr>
+          <td>10:05-10:25</td>
+          <td>Homomorphic Witness Encryption from Indistinguishable Obfuscation</td>
+                <td>Yuzhu Wang, Mingwu Zhang, Xingbo Wang</td>
+        </tr>
+		<tr>
+          <td>10:25-10:45</td>
+          <td>Post-quantum Sigma Protocols and Signatures from Low-Rank Matrix Completions</td>
+                <td>Jiaming Wen, Houzhen Wang, Huanguo Zhang</td>
+        </tr>
+        <tr >
+          <td>
+            10:45-11:00
+          </td>
+          <td colspan="2">
+		  Coffee Break
+          </td>
+        </tr> 
+        <tr >
+          <td>
+            11:00-11:40
+          </td>
+          <td colspan="2" style= "background:#F7CAAC;">
+		  <label style="font-weight:bold;">Session 6: Privacy Preservation (3 talks)</label>
+            <br />Session Chair: TBA
+          </td>
+        </tr>
+		<tr>
+          <td>11:10-11:20</td>
+          <td>Privacy Preserving Outsourced K-means Clustering using Kd-tree</td>
+                <td>Yanxiang Deng, Lin Liu, Shaojing Fu, Yuchuan Luo, Wei Wu, Shixiong Wang</td>
+        </tr>
+		<tr>
+          <td>11:20-11:40</td>
+          <td>Fuzzy Deduplication Scheme Supporting Pre-verification of Label Consistency</td>
+                <td>Zehui Tang, Shengke Zeng, Tao Li, Shuai Cheng, Haoyu Zheng</td>
+        </tr>
+        <tr >
+          <td>
+            11:40-13:30
+          </td>
+          <td colspan="2">
+            Lunch Break
+          </td>
+        </tr> 
+        <tr >
+          <td>
+            13:30-14:30
+          </td>
+          <td colspan="2" style= "background:#F7CAAC;">
+            <label style="font-weight:bold;">Session 7: Encryption II (3 talks)</label>
+			<br />Session Chair: TBA
+          </td>
+        </tr>
+		<tr>
+          <td>13:30-13:50</td>
+          <td>FleS: a compact and parameter-flexible supersingular isogeny based public key encryption scheme</td>
+                <td>Weihan Huang, Min Luo, Cong Peng, Debiao He</td>
+        </tr>
+		<tr>
+          <td>13:50-14:10</td>
+          <td>A New Revocable Attribute Based Encryption on Lattice</td>
+                <td>Lifeng Guo, Lingxia Wang, Xueke Ma, Qianli Ma</td>
+        </tr>
+		<tr>
+          <td>14:10-14:30</td>
+          <td>An efficient keyword-based ciphertext retrieval scheme</td>
+                <td>Zihao Liu, Ruixuan Deng, Chongxi Guan, Hua Shen</td>
+        </tr>
+        <tr >
+          <td>
+            14:30-14:45
+          </td>
+          <td colspan="2">
+            Coffee Break
+          </td>
+        </tr> 
+		<tr >
+          <td>
+            14:45-15:45
+          </td>
+          <td colspan="2" style= "background:#F7CAAC;">
+            <label style="font-weight:bold;">Session 8: Signature II (3 talks)</label>
+			<br />Session Chair: TBA
+          </td>
+        </tr>
+		<tr>
+          <td>14:45-15:05</td>
+          <td>Improved Key-Recovery Attacks under Imperfect SCA Oracle for Latticebased KEMs</td>
+                <td>Wenhao Shi, Jiang Han, Haodong Jiang, Zhi Ma</td>
+        </tr>
+		<tr>
+          <td>15:05-15:25</td>
+          <td>Signcryption-based Encrypted Traffic Detection Scheme for Fast Establishing Secure Connections</td>
+                <td>Hao Zhu, Fagen Li, Lihui Liu, Yong Zeng, Xiaoli Li, Jianfeng Ma</td>
+        </tr>
+		<tr>
+          <td>15:25-15:45</td>
+          <td>Linear Cryptanalysis of Lightweight Block Cipher WARP</td>
+                <td>Hong Xu, Chunyu Hao, Zhichao Xu, Wenfeng Qi</td>
+        </tr>
+		<tr>
+          <td>15:45-16:05</td>
+          <td>Linicrypt in the Ideal Cipher Model</td>
+                <td>Zahra Javar, Bruce M. Kapron</td>
+        </tr>
+		<tr >
+          <td>
+            16:05-16:30
+          </td>
+          <td colspan="2" style="background-color: #FFE599;">
+            <label style="font-weight:bold;">Closing Ceremony</label>
+          </td>
+        </tr> 
+		</table>
+		</div>
+		<br /><br /><br />
+		<!--
+		<div style="display: block; height: 40px;text-align: center; color:blue; font-weight: bolder; font-size: larger;">
+        Session 1: Fundamentals & Cryptographic Primitives
+       </div>
+	   <h5><strong>Efficient Zero-Knowledge Arguments for Matrix Relations over Rings and Non-malleable Enhancement</strong></h5>
+<p>Yuan Tian, Xinke Tian, Yongda Pang
+
+
+<h5><strong>Reversible Data Hiding in Encrypted Images Based on Block Classification Coding of Sparse Representation</strong></h5>
+<p>Fuhu Wu, Lin Wang, Shun Zhang, Jie Cui, Hong Zhong
+
+
+<h5><strong>Signcryption-based Encrypted Traffic Detection Scheme for Fast Establishing Secure Connections</strong></h5>
+<p>Hao Zhu, Fagen Li, Lihui Liu, Yong Zeng, Xiaoli Li, Jianfeng Ma
+
+<div style="display: block; height: 40px;text-align: center; color:blue; font-weight: bolder; font-size: larger;">
+        Session 2: Cryptanalysis
+       </div>
+<h5><strong>Improved Key-Recovery Attacks under Imperfect SCA Oracle for Latticebased KEMs</strong></h5>
+<p>Wenhao Shi, Jiang Han, Haodong Jiang, Zhi Ma
+
+<h5><strong>Linear Cryptanalysis of Lightweight Block Cipher WARP</strong></h5>
+<p>Hong Xu, Chunyu Hao, Zhichao Xu, Wenfeng Qi
+
+<h5><strong>Linicrypt in the Ideal Cipher Model</strong></h5>
+<p>Zahra Javar, Bruce M. Kapron
+
+<div style="display: block; height: 40px;text-align: center; color:blue; font-weight: bolder; font-size: larger;">
+        Session 3: Blockchain Security
+       </div>
+<h5><strong>CDRF: A Detection Method of Smart Contract Vulnerability Based on Random Forest</strong></h5>
+<p>Meng Huang, Jia Yang, Cong Liu
+
+<h5><strong>simuBits: Pool Security Verification of Novel Mining Attacks</strong></h5>
+<p>Zunlong Zhou, Wen Chen, Linrui Li, Yilin Zhang
+
+
+<div style="display: block; height: 40px;text-align: center; color:blue; font-weight: bolder; font-size: larger;">
+        Session 4: Encryption I
+       </div>
+<h5><strong>Homomorphic Witness Encryption from Indistinguishable Obfuscation</strong></h5>
+<p>Yuzhu Wang, Xingbo Wang, Mingwu Zhang
+
+<h5><strong>Identity-based Matchmaking Encryption Secure against Key Generation Center</strong></h5>
+<p>Sohto Chiku, Keisuke Hara, Junji Shikata
+
+<h5><strong>Multi-Input Functional Encryption for Unbounded Inner Products</strong></h5>
+<p>Bishnu Charan Behera, Somindu C. Ramanna
+
+<div style="display: block; height: 40px;text-align: center; color:blue; font-weight: bolder; font-size: larger;">
+        Session 5: Signature I
+       </div>
+<h5><strong>SMHSDVS: A Secure and Mutual Heterogeneous Strong Designated Signature between PKI and IBC</strong></h5>
+<p>Yibing Wang, Xiaoxiao Wang, Chin-tser Huang, Dejun Wang, Binhao Ma, Bo Meng
+
+<h5><strong>Key-Range Attribute-Based Signatures for Range of Inner Product and Its Applications</strong></h5>
+<p>Masahito Ishizaka
+
+<h5><strong>A Certificateless Aggregate Signature Scheme with Better Security</strong></h5>
+<p>Ran Xu, Yanwei Zhou, Yu Han, Bo Yang
+
+
+<div style="display: block; height: 40px;text-align: center; color:blue; font-weight: bolder; font-size: larger;">
+        Session 6: Privacy Preservation
+       </div>
+<h5><strong>Privacy Preserving Outsourced K-means Clustering using Kd-tree</strong></h5>
+<p>Yanxiang Deng, Lin Liu, Shaojing Fu, Yuchuan Luo, Wei Wu, Shixiong Wang
+
+
+<h5><strong>Fuzzy Deduplication Scheme Supporting Pre-verification of Label Consistency</strong></h5>
+<p>Zehui Tang, Shengke Zeng, Tao Li, Shuai Cheng, Haoyu Zheng
+
+<h5><strong>A Privacy-Preserving Takeaway Delivery Service Scheme</strong></h5>
+<p>Lang Xu, Jiqiang Li, Hao Zhang, Hua Shen
+
+<div style="display: block; height: 40px;text-align: center; color:blue; font-weight: bolder; font-size: larger;">
+        Session 7: Encryption II
+       </div>
+<h5><strong>FleS: a compact and parameter-flexible supersingular isogeny based public key encryption scheme</strong></h5>
+<p>Weihan Huang, Min Luo, Cong Peng, Debiao He
+
+<h5><strong>A New Revocable Attribute Based Encryption on Lattice</strong></h5>
+<p>Lifeng Guo, Lingxia Wang, Xueke Ma, Qianli Ma
+
+<h5><strong>An efficient keyword-based ciphertext retrieval scheme</strong></h5>
+<p>Zihao Liu, Ruixuan Deng, Chongxi Guan, Hua Shen
+
+<div style="display: block; height: 40px;text-align: center; color:blue; font-weight: bolder; font-size: larger;">
+        Session 8: Signature II
+       </div>
+<h5><strong>Constant-size Group Signatures with Message-Dependent Opening from Lattices</strong></h5>
+<p>Simin Chen, Jiageng Chen, Atsuko Miyaji, Kaiming Chen
+
+<h5><strong>Post-quantum Sigma Protocols and Signatures from Low-Rank Matrix Completions</strong></h5>
+<p>Jiaming Wen, Houzhen Wang, Huanguo Zhang
+
+<h5><strong>Threshold Ring Signature Scheme from Cryptographic Group Action</strong></h5>
+<p>Minh Thuy Truc Pham, Dung Hoang Duong, Yannan Li, Willy Susilo
+-->
 	</body>
 </html>
