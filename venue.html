@@ -70,13 +70,6 @@
 			}
 			
 		</style>
-		<!--引用百度地图API-->
-<style type="text/css">
-    html,body{margin:0;padding:0;}
-    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
-    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
-</style>
-<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 
 	</head>
 	<body>
@@ -198,50 +191,8 @@
 			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3436.088777448877!2d114.33762624651229!3d30.546795722699304!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x342ea57941dc20eb%3A0xf6cabb54720f0d19!2sHongshan%20Hotel!5e0!3m2!1sen!2sau!4v1696672922767!5m2!1sen!2sau" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>
 		<p></p>
-		<div>
-		<!--百度地图容器-->
-  <div style="width:1000px;height:600px;border:#ccc solid 1px;" id="dituContent"></div>
-		</div>
+		<iframe src= "https://m.amap.com/navi/?dest=114.336813,30.547295&destName=洪山宾馆&hideRouteIcon=&key=ba7e301ddee6f4d150ad0914dd6c458a"; height= "600"  width= "1000" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 	</body>
 	
-	<script type="text/javascript">
-    //创建和初始化地图函数：
-    function initMap(){
-        createMap();//创建地图
-        setMapEvent();//设置地图事件
-        addMapControl();//向地图添加控件
-    }
-    
-    //创建地图函数：
-    function createMap(){
-        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
-        var point = new BMap.Point(114.343436,30.553114);//定义一个中心点坐标
-        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
-        window.map = map;//将map变量存储在全局
-    }
-    
-    //地图事件设置函数：
-    function setMapEvent(){
-        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
-        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
-        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
-        map.enableKeyboard();//启用键盘上下左右键移动地图
-    }
-    
-    //地图控件添加函数：
-    function addMapControl(){
-        //向地图中添加缩放控件
-	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
-	map.addControl(ctrl_nav);
-        //向地图中添加缩略图控件
-	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
-	map.addControl(ctrl_ove);
-        //向地图中添加比例尺控件
-	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
-	map.addControl(ctrl_sca);
-    }
-    
-    
-    initMap();//创建和初始化地图
-</script>
 </html>
